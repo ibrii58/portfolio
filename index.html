@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İbrahim Çam — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- ─── CURSOR ─────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── HEADER / NAV ───────────────────────────── -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#hero" class="logo">İ<span>Ç</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#skills">Beceriler</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+        <li><a href="admin/login.php" class="btn-admin">Admin</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+          <span class="toggle-icon">☀</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ───────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span> Geliştirici Adayı
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-text="İbrahim">İbrahim</span>
+        <span class="line accent" data-text="Çam">Çam</span>
+      </h1>
+      <p class="hero-sub">Yazılım & Teknoloji Tutkunu</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Projeleri Gör</a>
+        <a href="#contact" class="btn-ghost">İletişime Geç</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Kaydır</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ───────────────────────────────────── -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-label">01 — Hakkımda</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Kim Olduğum</h2>
+          <p>Yazılım ve teknolojiye ilgi duyan, kendini sürekli geliştirmeye odaklı bir geliştirici adayıyım.</p>
+          <p>Yeni teknolojiler öğrenmeyi ve problem çözmeyi seviyorum. Projeler geliştirerek deneyim kazanmaya devam ediyorum.</p>
+          <div class="about-links">
+            <a href="https://github.com/cibrahim58" target="_blank" class="link-pill github">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/cibrahim58
+            </a>
+            <a href="mailto:camibrahim5834@gmail.com" class="link-pill email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              camibrahim5834@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">Tamamlanan Proje</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="4">0</span>
+            <span class="stat-label">Öğrenilen Teknoloji</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-label">% Öğrenme Azmi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ──────────────────────────────────── -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-label">02 — Beceriler</div>
+      <h2 class="section-title">Kullandığım <span class="accent-text">Teknolojiler</span></h2>
+      <div class="skills-grid">
+        <div class="skill-item" data-level="85">
+          <div class="skill-icon html">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+          </div>
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar"><div class="skill-fill" style="--target: 85%"></div></div>
+        </div>
+        <div class="skill-item" data-level="80">
+          <div class="skill-icon css">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+          </div>
+          <span class="skill-name">CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" style="--target: 80%"></div></div>
+        </div>
+        <div class="skill-item" data-level="75">
+          <div class="skill-icon js">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+          </div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" style="--target: 75%"></div></div>
+        </div>
+        <div class="skill-item" data-level="70">
+          <div class="skill-icon php">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.476-.29-.904-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.39 2.006H3.84l1.024-5.271h2.164c.605 0 1.07.158 1.389.469.321.311.452.756.39 1.332-.064.572-.273 1.001-.534 1.249zm5.083.959l-.307 1.761H12.3l.307-1.761h-1.173l-.277 1.761h-1.263l.277-1.761H9l.19-1.174h1.148l.207-1.317h-1.15l.192-1.173h1.154l.277-1.761h1.264l-.277 1.761h1.174l.278-1.761h1.264l-.278 1.761h.949l-.192 1.173h-.946l-.209 1.317h.944l-.188 1.174zm3.508-.688c-.261.25-.575.438-.918.551-.336.108-.765.164-1.285.164h-1.181l-.39 2.006h-1.126l1.024-5.271h2.164c.605 0 1.07.158 1.389.469.321.311.452.756.39 1.332-.064.572-.273 1.001-.534 1.249zm0 0"/><path d="M16.554 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.476-.29-.904-.29z"/></svg>
+          </div>
+          <span class="skill-name">PHP</span>
+          <div class="skill-bar"><div class="skill-fill" style="--target: 70%"></div></div>
+        </div>
+        <div class="skill-item" data-level="68">
+          <div class="skill-icon mysql">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.19.224.274l.14.247.014-.014c.086-.043.14-.112.14-.216v-.014c-.014-.064-.014-.117-.064-.166-.05-.05-.117-.09-.194-.117zm-2.184 3.85c-.054 0-.09.01-.122.022v.01h.014c.043.046.09.08.14.11l.107.19.014-.013v-.003c.066-.043.107-.112.107-.215v-.016c-.01-.064-.01-.117-.06-.166-.05-.05-.106-.09-.2-.12zm-8.2-3.85c-.063 0-.116.014-.17.033.014.014.027.014.027.027.067.104.146.19.224.274l.14.247h.013c.04-.033.083-.083.12-.14.04-.04.07-.097.07-.17 0-.06-.014-.116-.06-.167-.05-.05-.117-.09-.195-.117-.046-.013-.1-.013-.17-.013z"/><path d="M23.143 11.584a6.37 6.37 0 0 0-1.443-.34c-.196-.028-.395-.046-.596-.046-.19 0-.38.014-.57.04-.05.01-.1.016-.15.027v.014c.04.014.083.027.12.04.15.053.274.106.37.17.027.013.04.026.066.04-.04.013-.08.026-.12.04a5.08 5.08 0 0 0-.82.35c-.034.02-.067.04-.1.055-.017.01-.034.02-.05.03l.013.013c.037.01.07.014.1.014.048 0 .09-.006.13-.02.04-.013.077-.03.11-.05.035-.02.068-.042.1-.066.14-.1.28-.19.43-.28.1-.056.2-.107.3-.158.1-.05.198-.1.298-.14.1-.04.2-.07.3-.09.1-.022.197-.033.296-.033.098 0 .197.01.293.03.95.19 1.77.77 2.35 1.53.077.1.15.207.217.314.067.108.127.217.183.328.056.11.108.22.154.334.046.113.088.227.124.342a3.87 3.87 0 0 1 .085.35c.02.118.033.237.038.356.004.12.003.24-.004.36-.007.12-.02.24-.04.357a3.66 3.66 0 0 1-.085.35 3.49 3.49 0 0 1-.13.337 3.16 3.16 0 0 1-.17.32c-.067.104-.14.203-.217.3-.077.094-.16.184-.245.27-.086.085-.175.165-.267.24-.092.073-.187.14-.285.204-.098.062-.198.12-.3.172-.102.05-.206.097-.312.138-.106.04-.214.075-.323.104-.11.028-.22.05-.33.065-.11.014-.22.02-.33.02-.11 0-.22-.006-.33-.02-.11-.014-.22-.036-.33-.065a3.22 3.22 0 0 1-.323-.104 3.07 3.07 0 0 1-.312-.138 3.09 3.09 0 0 1-.3-.172c-.098-.063-.193-.13-.285-.204a2.87 2.87 0 0 1-.267-.24c-.086-.086-.168-.176-.245-.27-.078-.096-.15-.196-.217-.3a2.92 2.92 0 0 1-.17-.32 2.84 2.84 0 0 1-.13-.337 3.06 3.06 0 0 1-.085-.35c-.02-.118-.033-.237-.04-.357-.007-.12-.008-.24-.004-.36.005-.12.017-.238.038-.356a3.6 3.6 0 0 1 .085-.35c.036-.115.078-.23.124-.342.046-.113.098-.224.154-.334.056-.11.116-.22.183-.328.067-.107.14-.213.217-.314.077-.1.158-.196.242-.29.08-.09.167-.176.256-.258.09-.082.183-.16.278-.233.094-.073.19-.14.29-.2.1-.06.2-.115.305-.164.105-.05.21-.092.318-.128.108-.036.217-.065.327-.088.11-.023.22-.04.33-.05.11-.01.22-.013.33-.01.11.003.22.012.33.028.108.016.217.038.323.065.107.027.21.06.314.096z"/></svg>
+          </div>
+          <span class="skill-name">MySQL</span>
+          <div class="skill-bar"><div class="skill-fill" style="--target: 68%"></div></div>
+        </div>
+        <div class="skill-item" data-level="72">
+          <div class="skill-icon git">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+          </div>
+          <span class="skill-name">Git</span>
+          <div class="skill-bar"><div class="skill-fill" style="--target: 72%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─────────────────────────────────── -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-label">03 — Projeler</div>
+      <h2 class="section-title">Yaptığım <span class="accent-text">İşler</span></h2>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="projects-loading">
+          <div class="spinner"></div>
+          <p>Projeler yükleniyor...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────────────── -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-label">04 — İletişim</div>
+      <h2 class="section-title">Bir Şey mi <span class="accent-text">Sormak</span> İstiyorsun?</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">Herhangi bir proje veya iş birliği için benimle iletişime geçebilirsin. En kısa sürede geri döneceğim.</p>
+          <div class="contact-detail">
+            <span class="cd-icon">📧</span>
+            <a href="mailto:camibrahim5834@gmail.com">camibrahim5834@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">💻</span>
+            <a href="https://github.com/cibrahim58" target="_blank">github.com/cibrahim58</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Ad Soyad</label>
+            <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" autocomplete="name" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="ornek@email.com" autocomplete="email" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Konu</label>
+            <input type="text" id="subject" name="subject" placeholder="Mesajınızın konusu" />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+            <span class="btn-text">Gönder</span>
+            <span class="btn-loading" style="display:none">Gönderiliyor...</span>
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            ✓ Mesajınız başarıyla gönderildi!
+          </div>
+          <div class="form-error-msg" id="formErrorMsg" style="display:none">
+            ✗ Bir hata oluştu. Lütfen tekrar deneyin.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">İbrahim Çam</span>
+        <p class="footer-copy">© 2025 Tüm hakları saklıdır.</p>
+        <a href="https://github.com/cibrahim58" target="_blank" class="footer-gh">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<title>Proje Raporu — İbrahim Çam</title>
+<style>
+  body { font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 3rem 2rem; color: #1a1714; line-height: 1.7; }
+  h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #ff4f1f; }
+  h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.75rem; border-bottom: 2px solid #f0ede8; padding-bottom: 0.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.25rem; color: #333; }
+  .meta { color: #7a746b; font-size: 0.9rem; margin-bottom: 2rem; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th { background: #f5f3ee; text-align: left; padding: 0.6rem 0.8rem; border: 1px solid #ddd9d2; }
+  td { padding: 0.6rem 0.8rem; border: 1px solid #ddd9d2; }
+  code { background: #f5f3ee; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.85rem; }
+  ul { padding-left: 1.5rem; }
+  li { margin-bottom: 0.4rem; }
+  .badge { display: inline-block; background: #ff4f1f; color: #fff; padding: 0.2rem 0.6rem; border-radius: 100px; font-size: 0.78rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Full-Stack Web Portfolio</h1>
+<div class="meta">
+  <strong>Öğrenci:</strong> İbrahim Çam &nbsp;|&nbsp;
+  <strong>GitHub:</strong> github.com/cibrahim58 &nbsp;|&nbsp;
+  <strong>Tarih:</strong> 2025
+</div>
+
+<h2>1. Proje Özeti</h2>
+<p>Bu proje; HTML5, CSS3, JavaScript, PHP ve MySQL teknolojileri kullanılarak geliştirilmiş, tam yığın (full-stack) bir kişisel portfolyo web uygulamasıdır. Statik bir sayfa olmaktan çok, veritabanıyla bütünleşik dinamik bir web uygulamasıdır.</p>
+
+<h2>2. Teknik Gereksinimler ve Karşılanma Durumu</h2>
+<table>
+  <thead><tr><th>Gereksinim</th><th>Açıklama</th><th>Durum</th></tr></thead>
+  <tbody>
+    <tr><td>Semantic HTML5</td><td>header, nav, section, footer vb. etiketler kullanıldı</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>CSS Flexbox/Grid</td><td>Tüm layout Flexbox ve Grid ile yapıldı</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>Responsive Design</td><td>Mobile-first, hamburger menü, fluid typography</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>JavaScript DOM</td><td>Cursor, counter, reveal, skill bar animasyonları</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>Form Validasyonu</td><td>JS ile client-side + PHP ile server-side doğrulama</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>Dark/Light Mode</td><td>CSS değişkenleri + localStorage + Cookie</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>AJAX / Fetch API</td><td>Projeler ve contact form AJAX ile iletişim kurar</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>PHP Backend</td><td>İletişim formu, proje listeleme, admin işlemleri</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>MySQL Veritabanı</td><td>projects, contacts, admins tabloları, PDO kullanımı</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>Session Yönetimi</td><td>Admin girişi, session timeout, güvenli çıkış</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>Cookie Kullanımı</td><td>Tema tercihi ve admin remember cookie</td><td><span class="badge">✓</span></td></tr>
+    <tr><td>Admin Dashboard</td><td>Proje ekleme/silme, mesaj okuma, istatistikler</td><td><span class="badge">✓</span></td></tr>
+  </tbody>
+</table>
+
+<h2>3. Dosya Yapısı</h2>
+<pre><code>portfolio/
+├── index.html              ← Ana sayfa
+├── portfolio_db.sql        ← Veritabanı export
+├── css/
+│   ├── style.css           ← Ana stil dosyası
+│   └── admin.css           ← Admin panel stilleri
+├── js/
+│   └── main.js             ← Tüm JavaScript (cursor, validasyon, AJAX...)
+├── php/
+│   ├── db.php              ← PDO bağlantısı
+│   ├── get_projects.php    ← AJAX: Projeleri getir
+│   └── submit_contact.php  ← AJAX: Form gönder
+└── admin/
+    ├── login.php           ← Admin girişi
+    ├── dashboard.php       ← Admin paneli
+    └── logout.php          ← Oturum sonlandırma</code></pre>
+
+<h2>4. Öne Çıkan Teknik Detaylar</h2>
+<h3>Güvenlik</h3>
+<ul>
+  <li>Tüm kullanıcı girdileri <code>htmlspecialchars()</code> ve <code>trim()</code> ile temizlenir</li>
+  <li>Veritabanı işlemleri PDO Prepared Statements ile yapılır (SQL Injection koruması)</li>
+  <li>Admin şifresi <code>password_hash()</code> / <code>password_verify()</code> ile saklanır</li>
+  <li>Session timeout (30 dakika) ve <code>session_regenerate_id()</code> uygulandı</li>
+</ul>
+<h3>Performans & UX</h3>
+<ul>
+  <li>IntersectionObserver ile scroll-triggered animasyonlar (layout reflow yok)</li>
+  <li>Özel CSS cursor, blob animasyonları, skill bar geçişleri</li>
+  <li>Counter animasyonu sayısal değerleri kademeli artırarak gösterir</li>
+  <li>Tema tercihi hem Cookie hem localStorage'de saklanır</li>
+</ul>
+
+<h2>5. Veritabanı Şeması</h2>
+<table>
+  <thead><tr><th>Tablo</th><th>Sütunlar</th><th>Amaç</th></tr></thead>
+  <tbody>
+    <tr><td>projects</td><td>id, title, description, technologies, github_url, live_url, created_at</td><td>Portfolyo projeleri</td></tr>
+    <tr><td>contacts</td><td>id, name, email, subject, message, ip_address, is_read, created_at</td><td>İletişim mesajları</td></tr>
+    <tr><td>admins</td><td>id, username, password_hash, created_at</td><td>Admin kullanıcıları</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Kullanılan Teknolojiler</h2>
+<ul>
+  <li><strong>Frontend:</strong> HTML5, CSS3 (Custom Properties, Flexbox, Grid, Animations), Vanilla JavaScript (ES6+, Fetch API, IntersectionObserver)</li>
+  <li><strong>Backend:</strong> PHP 8+, PDO</li>
+  <li><strong>Veritabanı:</strong> MySQL 8 / MariaDB</li>
+  <li><strong>Fontlar:</strong> Syne (display), DM Sans (body) — Google Fonts</li>
+</ul>
+
+<h2>7. Kurulum</h2>
+<ol>
+  <li>Dosyaları hosting'e veya XAMPP/WAMP'a yükleyin</li>
+  <li><code>portfolio_db.sql</code> dosyasını phpMyAdmin'den import edin</li>
+  <li><code>php/db.php</code> içindeki DB_USER ve DB_PASS değerlerini güncelleyin</li>
+  <li>Admin paneline <code>/admin/login.php</code> adresinden erişin (admin / password)</li>
+</ol>
+</body>
+</html>
